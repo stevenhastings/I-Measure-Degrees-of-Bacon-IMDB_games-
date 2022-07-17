@@ -54,13 +54,13 @@ def load_data(directory):
             except KeyError:
                 pass
 
-actors = pd.read_csv("large\\actors.csv")
-peeps = pd.read_csv("large\\people.csv")
+actors = pd.read_csv("DATA\\actors.csv")
+peeps = pd.read_csv("DATA\\people.csv")
 
 def main():
     if len(sys.argv) > 2:
         sys.exit("Usage: python degrees.py [directory]")
-    directory = sys.argv[1] if len(sys.argv) == 2 else "large"
+    directory = sys.argv[1] if len(sys.argv) == 2 else "DATA"
 
     # Load data from files into memory
     print("Loading data...")
